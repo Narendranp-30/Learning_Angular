@@ -26,4 +26,7 @@ export class SignalsComponent {
  }
 
  car=["audi","bmw","benz","ford","maruti"];
+
+ bikes=["TVS","RE","HONDA","YAMAHA"];
+
 }

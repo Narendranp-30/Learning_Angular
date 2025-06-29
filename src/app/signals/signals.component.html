@@ -7,3 +7,31 @@
 <li *ngFor="let car of car">{{car}}</li>
 
 </ul>
+<h1>NgFor Simplke exampel</h1>
+<ul>
+    <li *ngFor="let bike of bikes; let i=index">
+       {{i+1}}. {{bike}}
+
+    </li>
+</ul>
+
+
+<h1>NgFor First element and last</h1>
+<ul>
+    <li *ngFor="let bike of bikes; let isFirst=first; let isLast=last;">
+        <strong *ngIf="isFirst">First Bike:</strong>
+        <strong *ngIf="isLast">Last Bike:</strong>
+
+        {{bike}}
+
+    </li>
+</ul>
+<h1>NgFor Odd</h1>
+<ul>
+    <li *ngFor="let bike of bikes; let isEven=even; let isOdd=odd;"
+       [ngClass]="{'Even':isEven,'Odd':isOdd}"
+>
+        {{bike}}
+
+    </li>
+</ul>

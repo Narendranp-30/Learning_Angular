@@ -27,7 +27,6 @@ safe = {
   name:"safe navigation",
   working:"yes",
   time:"now"
-
 }
 
 count=0;
