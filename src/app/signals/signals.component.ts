@@ -1,10 +1,11 @@
 import { CommonModule, NgFor } from '@angular/common';
 import { Component, Signal, signal,computed } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-signals',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule,FormsModule],
   templateUrl: './signals.component.html',
   styleUrl: './signals.component.css'
 })
@@ -28,5 +29,8 @@ export class SignalsComponent {
  car=["audi","bmw","benz","ford","maruti"];
 
  bikes=["TVS","RE","HONDA","YAMAHA"];
+
+ hide=false;
+
 
 }
