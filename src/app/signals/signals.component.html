@@ -41,3 +41,11 @@
 <p *ngIf="hide">Can you see me?</p>
 <input type="checkbox" [(ngModel)]="hide">
 
+
+<!--ngClass-->
+
+<h1 [ngClass]="['primary']">NgClass</h1>
+<h1 [ngClass]="{'color':color}">NgClass Twoway bind</h1>
+<input type="checkbox" [(ngModel)]="color">
+
+<h1 [ngStyle]="{'color':'orange'}">Good Morning</h1>

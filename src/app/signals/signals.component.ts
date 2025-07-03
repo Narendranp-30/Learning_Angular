@@ -31,6 +31,6 @@ export class SignalsComponent {
  bikes=["TVS","RE","HONDA","YAMAHA"];
 
  hide=false;
-
+ color=false;
 
 }
