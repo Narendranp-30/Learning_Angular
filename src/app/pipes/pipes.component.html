@@ -1,1 +1,21 @@
-<p>pipes works!</p>
+
+<!-- Pipes date -->
+<h1 >Current date:{{date}} </h1>
+<h1 >Current date with format:{{date|date}} </h1>
+<h1 >medium date with format:{{date|date:'medium'}} </h1>
+<h1 >Short date with format:{{date|date:'short'}} </h1>
+<h1 >Full date with format:{{date|date:'fullDate'}} </h1>
+<h1 >Long date with format:{{date|date:'longDate'}} </h1>
+
+
+<!-- 
+pipe slice -->
+ <ul>
+    <li *ngFor="let items of item|slice:0:3">{{items}}</li>
+    </ul>
+
+<!-- pipe upper,lowercases -->
+    <h1>Uppercase:{{demo|uppercase}}</h1>
+    <h1>Uppercase:{{demo|lowercase}}</h1>
+
+    
