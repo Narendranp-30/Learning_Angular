@@ -14,4 +14,7 @@ export class PipesComponent {
   date=new Date();
   item = ['i1','i2','i3','i4','i5']
   demo="Good Morning";
+
+
+  amount=1000;
 }
