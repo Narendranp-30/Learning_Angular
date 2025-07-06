@@ -17,4 +17,9 @@
 
 
 <!-- <app-signals></app-signals> -->
- <app-pipes></app-pipes>
+ <!-- <app-pipes></app-pipes> -->
+
+ <div>
+    <app-form (nameAdded)="onNameAdded($event)"></app-form>
+    <app-display [myName]="myNames"></app-display>
+ </div>

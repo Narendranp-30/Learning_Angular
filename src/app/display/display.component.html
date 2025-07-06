@@ -1,0 +1,11 @@
+<div>
+
+    <h2>Name list</h2>
+    @if(myName.length > 0){
+    <ul>
+        <li *ngFor="let myNames of myName">{{myNames}}</li>
+    </ul>
+}@else{
+    <p>No Name</p>
+}
+</div>
