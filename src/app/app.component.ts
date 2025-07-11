@@ -44,12 +44,12 @@ count=0;
 counter(){
   this.count++;
 }
-myNames:string[] =[];
-onNameAdded(myName:string)
-{
-  console.log(myName,' from app');
-  this.myNames.push(myName);
-}
+// myNames:string[] =[];
+// onNameAdded(myName:string)
+// {
+//   console.log(myName,' from app');
+//   this.myNames.push(myName);
+// }
 
 
 }

@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component, EventEmitter, Output} from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { BikeService } from '../bike.service';
 
 @Component({
   selector: 'app-form',
@@ -11,10 +12,15 @@ import { FormsModule } from '@angular/forms';
 })
 export class FormComponent {
 myName:string='';
-@Output() nameAdded = new EventEmitter<string>();
+// @Output() nameAdded = new EventEmitter<string>();
+
+constructor(private bikeService:BikeService){
+
+}
 onSubmit(){
   console.log(this.myName);
-  this.nameAdded.emit(this.myName);
+  // t his.nameAdded.emit(this.myName);
+  this.bikeService.addbikeName(this.myName)
   this.myName='';
 }
 

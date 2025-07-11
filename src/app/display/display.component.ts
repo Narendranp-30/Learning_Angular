@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { BikeService } from '../bike.service';
 
 @Component({
   selector: 'app-display',
@@ -8,6 +9,16 @@ import { Component, Input } from '@angular/core';
   templateUrl: './display.component.html',
   styleUrl: './display.component.css'
 })
-export class DisplayComponent {
- @Input()myName:string[] = [ ];
+export class DisplayComponent implements OnInit {
+//  @Input()myName:string[] = [ ];
+myName:string[] =[];
+
+constructor (private bikeService:BikeService) {
+
+}
+ngOnInit(): void {
+  this.bikeService.bikeName$.subscribe((names)=>{
+    this.myName = names;
+  })
+}
 }
