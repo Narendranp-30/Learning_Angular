@@ -20,6 +20,14 @@
  <!-- <app-pipes></app-pipes> -->
 
  <div>
-    <app-form></app-form>
-    <app-display></app-display>
+    <!-- <app-form></app-form>
+    <app-display></app-display> -->
+    <input type="text" name="title" [(ngModel)]="title">
+    <app-lifecyclehooks [items]="itemList" [title]="title">
+
+        <p #messageContent>Hi hello</p>
+        <p #messageContent>G U B</p>
+
+    </app-lifecyclehooks>
+
  </div>

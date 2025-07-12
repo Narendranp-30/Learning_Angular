@@ -5,13 +5,14 @@ import { SignalsComponent } from './signals/signals.component';
 import { PipesComponent } from './pipes/pipes.component';
 import { FormComponent } from './form/form.component';
 import { DisplayComponent } from './display/display.component';
+import { LifecyclehooksComponent } from './lifecyclehooks/lifecyclehooks.component';
 
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, FormsModule,SignalsComponent,PipesComponent,FormComponent,DisplayComponent],
+  imports: [RouterOutlet, FormsModule,SignalsComponent,PipesComponent,FormComponent,DisplayComponent,LifecyclehooksComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
@@ -19,6 +20,19 @@ import { DisplayComponent } from './display/display.component';
 
 export class AppComponent {
   title = 'AngularDemo';
+  itemList=[
+    {id:1,name:"Angular"},
+    {id:1,name:"Next"},
+    {id:1,name:"React"},
+    {id:1,name:"Node"},
+    {id:1,name:"Backbone"},
+    {id:1,name:"vue"},
+  ]
+
+
+
+
+
   //This function returns the name "Narendra"
   myName(){
   return "Narendra"
