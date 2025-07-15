@@ -23,11 +23,16 @@
     <!-- <app-form></app-form>
     <app-display></app-display> -->
     <input type="text" name="title" [(ngModel)]="title">
-    <app-lifecyclehooks [items]="itemList" [title]="title">
 
-        <p #messageContent>Hi hello</p>
-        <p #messageContent>G U B</p>
+    @if(showHi){
 
-    </app-lifecyclehooks>
+        <app-lifecyclehooks [items]="itemList" [title]="title">
+    
+            <p #messageContent>Hi hello</p>
+            <p #messageContent>G U B</p>
+    
+        </app-lifecyclehooks>
+    }
+    <input type="checkbox" [(ngModel)]="showHi">
 
  </div>

@@ -64,7 +64,7 @@ counter(){
 //   console.log(myName,' from app');
 //   this.myNames.push(myName);
 // }
-
+showHi=true;
 
 }
 
