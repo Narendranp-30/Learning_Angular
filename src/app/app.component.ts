@@ -6,13 +6,14 @@ import { PipesComponent } from './pipes/pipes.component';
 import { FormComponent } from './form/form.component';
 import { DisplayComponent } from './display/display.component';
 import { LifecyclehooksComponent } from './lifecyclehooks/lifecyclehooks.component';
+import { HttpRequestResponseComponent } from './http-request-response/http-request-response.component';
 
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, FormsModule,SignalsComponent,PipesComponent,FormComponent,DisplayComponent,LifecyclehooksComponent],
+  imports: [RouterOutlet, FormsModule,SignalsComponent,PipesComponent,FormComponent,DisplayComponent,LifecyclehooksComponent,HttpRequestResponseComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
